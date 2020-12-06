@@ -13,5 +13,8 @@ q = int(input('Enter q: '))
 phi = (p - 1) * (q - 1)
 d = inverse(e, phi)
 m = pow(c, d, n)
-res = bytearray.fromhex(str(hex(m)).split('x')[-1]).decode()
-print('Flag:', res)
+try:
+    res = bytearray.fromhex(str(hex(m)).split('x')[-1]).decode()
+    print('Flag:', res)
+except Exception:
+    print('Invalid data, please check your input. Enter only decimal numbers.')
