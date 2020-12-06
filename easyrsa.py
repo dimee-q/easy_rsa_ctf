@@ -1,7 +1,7 @@
 from Crypto.Util.number import inverse
 
 
-print("On the factordb.com you can get p and q using n.\n"
+print("On the alpertron.com.ar/ECM.HTM you can get p and q using n.\n"
       "Enter only decimal numbers.")
 
 n = int(input('Enter n: '))
